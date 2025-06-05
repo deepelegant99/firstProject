@@ -1,0 +1,26 @@
+.centered {
+  text-align: center;
+}
+.large {
+  font-size: large;
+}
+.medium {
+  font-size: medium;
+}
+.small {
+  font-size: small;
+}
+body {
+  font-family: Helvetica, sans-serif, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #0205a8;
+}
+a {
+  color: #ee0538;
+  text-decoration: none;
+}
+a:hover {
+  color: #f0a500;
+  text-decoration: underline;
+}

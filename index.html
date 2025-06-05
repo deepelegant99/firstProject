@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+  </head>
+  <body>
+    <ol>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+    </ol>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JavaScript for loop to generate table rows -->
+            <script>
+            const people = [
+                { name: "Alice", age: 24, city: "New York" },
+                { name: "Bob", age: 30, city: "London" },
+                { name: "Charlie", age: 28, city: "Paris" }
+            ];
+            for (let i = 0; i < people.length; i++) {
+                document.write(
+                `<tr>
+                    <td>${people[i].name}</td>
+                    <td>${people[i].age}</td>
+                    <td>${people[i].city}</td>
+                </tr>`
+                );
+            }
+            </script>
+        </tbody>
+    </table>
+  </body>
+</html>
