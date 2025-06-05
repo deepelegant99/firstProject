@@ -9,8 +9,9 @@
         document
           .querySelector("form")
           .addEventListener("submit", function (event) {
-            let name = document.querySelector("#name").value;
-            alert(`Hello, ${name}!`);
+            // let name = document.querySelector("#name").value;
+            // alert(`Hello, ${name}!`);
+            alert("Hello " + document.querySelector("#name").value + "!");
             event.preventDefault(); // Prevent form submissionS
           });
       });
