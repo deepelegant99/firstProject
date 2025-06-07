@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // This script runs when the DOM is fully loaded
+
+        const buttons = document.querySelectorAll("button");
+        let canvas = document.querySelector("p");
+        canvas.style.background =
+          document.querySelector("body").style.backgroundColor;
+        buttons.forEach((button) => {
+          button.addEventListener("click", function () {
+            // alert(`You clicked the ${this.textContent} button!`);
+            canvas.style.background = this.textContent;
+          });
+        });
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Examples</title>
+  </head>
+  <body style="text-align: center;">
+    <h1>Color Example</h1>
+
+    <div style="margin: 30px 0; text-align: center">
+      <button
+        style="
+          background: #007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 24px;
+          border-radius: 5px;
+          margin: 0 10px;
+          cursor: pointer;
+        "
+      >
+        Blue
+      </button>
+      <button
+        style="
+          background: #dc3545;
+          color: #fff;
+          border: none;
+          padding: 10px 24px;
+          border-radius: 5px;
+          margin: 0 10px;
+          cursor: pointer;
+        "
+      >
+        Red
+      </button>
+      <button
+        style="
+          background: #ffc107;
+          color: #333;
+          border: none;
+          padding: 10px 24px;
+          border-radius: 5px;
+          margin: 0 10px;
+          cursor: pointer;
+        "
+      >
+        Yellow
+      </button>
+    </div>
+    <p
+      style="
+        width: 300px;
+        height: 100px;
+        background: purple;
+        color: #fff;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        text-align: center;
+      "
+    ></p>
+  </body>
+</html>
