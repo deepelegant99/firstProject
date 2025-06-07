@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // This script runs when the DOM is fully loaded
+        let inbox = document.querySelector("input");
+        let name = document.querySelector("p");
+        name.innerHTML = "What are you looking for, buddy?";
+        inbox.addEventListener("keyup", function (event) {
+          // Change the background color when the input is focused
+          if (inbox.value) {
+            name.innerHTML = `Hello, ${inbox.value}!`;
+          } else {
+            name.innerHTML = "Type away, buddy...";
+          }
+        });
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Page</title>
+  </head>
+  <body
+    style="
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    "
+  >
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <p style="text-align: center; margin-bottom: 16px"></p>
+      <input
+        type="text"
+        placeholder="Inbox..."
+        autofocus
+        style="
+          width: 350px;
+          padding: 10px;
+          font-size: 1.1rem;
+          text-align: center;
+          border-radius: 8px;
+          border: 1px solid #ccc;
+          box-shadow: 0 2px 8px #eee;
+        "
+      />
+    </div>
+  </body>
+</html>
